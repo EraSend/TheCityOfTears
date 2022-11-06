@@ -1,5 +1,5 @@
 Sprites Files
 
 ```
-Made by lykiys
+Made by lykiys & Snowly
 ```
