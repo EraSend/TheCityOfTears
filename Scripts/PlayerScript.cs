@@ -10,14 +10,14 @@ public class PlayerScript : MonoBehaviour
     private float speed = 0.5f;
     private float JumpForce = 7f;
 
-    void Start()
+    private void Start()
     {
         a = GetComponet<Rigidbody2D>();
         sr = GetComponet<SpriteRenderer>();
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         float movement = Input.GetAxis("Hotizontal");
         transform.position += new Vector3(movement, 0, 0) * speed * Time.delta.Time;
