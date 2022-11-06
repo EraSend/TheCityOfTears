@@ -5,8 +5,8 @@
 ```js
 {
   programmers: ["Sy3rena", "Snowly"],
-  game_designer: ["Snowly"],
-  spriter: ["lykiys"],
+  game_designer: ["Sy3rena"],
+  spriter: ["lykiys", "Snowly"],
   beta_tester: ["Skelet1k"],
   sound_creator: ["joressen"]
 }
