@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class S : MonoBehaviour
-Rigidbody2D a
+// Made by Snowly
+public class PlayerScript : MonoBehaviour
 {
-    // by snowly
+    private Rigidbody2D rb;
+
     void Start()
     {
         a = GetComponet<Rigidbody2D>();
