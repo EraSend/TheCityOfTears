@@ -1,5 +1,5 @@
 **Game Scenes**
 
 ```
-Made by Snowly
+Made by Sy3rena
 ```
