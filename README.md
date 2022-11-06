@@ -8,6 +8,6 @@
   game_designer: ["Snowly"],
   spriter: ["lykiys"],
   beta_tester: ["Skelet1k"],
-  sound_creator: null
+  sound_creator: ["joressen"]
 }
 ```
