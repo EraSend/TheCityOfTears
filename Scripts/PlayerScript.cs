@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerScript : MonoBehaviour
 {
     private Rigidbody2D rb;
+    private SpriteRenderer sr;
     private float speed = 0.5f;
     private float JumpForce = 7f;
 
