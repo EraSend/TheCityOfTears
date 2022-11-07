@@ -8,6 +8,10 @@ public class PlayerScript : MonoBehaviour
 {
     private Rigidbody2D rb;
     private SpriteRenderer sr;
+    private bool OnGround;
+    public Transform GroundCheck;
+    private float RadiusCheck = 0.23f;
+    public LayerMask Ground;
 
     private void Start()
     {
@@ -17,6 +21,8 @@ public class PlayerScript : MonoBehaviour
 
     private void Update()
     {
+        CheckingGround();
+
         if (Input.GetKey(KeyCode.A))
         {
             transform.localPosition += -transform.right * BaseClassScript.PlayerSpeed * Time.deltaTime;
@@ -28,5 +34,15 @@ public class PlayerScript : MonoBehaviour
             transform.localPosition += transform.right * BaseClassScript.PlayerSpeed * Time.deltaTime;
             sr.flipX = true;
         }
+        
+        else if (Input.GetKeyDown(KeyCode.Space) && OnGround)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, BaseClassScript.JumpForce);
+        }
+    }
+
+    private void CheckingGround()
+    {
+        OnGround = Physics2D.OverlapCircle(GroundCheck.position, RadiusCheck, Ground);
     }
 }
