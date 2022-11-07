@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 
-// Made by Snowly
+// Made by Snowly & Sy3rena
 public class PlayerScript : MonoBehaviour
 {
     private Rigidbody2D rb;
