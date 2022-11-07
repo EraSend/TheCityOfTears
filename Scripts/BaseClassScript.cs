@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Config class
 public class BaseClassScript : MonoBehaviour
 {
     public static float PlayerSpeed = 4f;
