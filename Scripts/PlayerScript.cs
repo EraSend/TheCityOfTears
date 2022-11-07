@@ -12,11 +12,10 @@ public class PlayerScript : MonoBehaviour
 
     private void Start()
     {
-        a = GetComponet<Rigidbody2D>();
+        rb = GetComponet<Rigidbody2D>();
         sr = GetComponet<SpriteRenderer>();
     }
 
-    // Update is called once per frame
     private void Update()
     {
         float movement = Input.GetAxis("Hotizontal");
