@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 // Start Scene Script
@@ -13,11 +14,11 @@ public class BedroomScript : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Player" && Input.GetKey(KeyCode.F))
         {
-            
+            SceneManager.LoadScene("2lvl");
         }
     }
 }
