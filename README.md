@@ -1,6 +1,6 @@
 # TheCityOfTears
 
-**The largest project created by the PENIS TEAM**
+**The largest project created by the PASRAL TEAM**
 
 ```js
 {
